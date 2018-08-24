@@ -136,10 +136,13 @@ def main():
                 close_actions[dev_str]()  
         elif len(event.parseString(t)) == 3: # argument  
             cmd, dev, arg = event.parseString(t)  
-            cmd_str, dev_str, arg_str = ' '.join(cmd), ' '.join(dev), ' '.join(arg)  
+            cmd_str = ' '.join(cmd)
+            dev_str = ' '.join(dev)
+            arg_str = ' '.join(cmd)
             num_arg = 0  
             try:  
-                num_arg = int(arg_str.split()[0]) # extract the numeric part  
+                # extract the numeric part
+                num_arg = int(arg_str.split()[0])  
             except ValueError as err:  
                 print(f"expected number but got: '{arg_str[0]}'")  
             if 'increase' in cmd_str and num_arg > 0:  

@@ -30,10 +30,14 @@ def allUnique(word, strategy):
     return strategy(word) 
 
 def main(): 
+
+    WORD_IN_DESC = 'Insert word (type quit to exit)> '
+    STRAT_IN_DESC = 'Choose strategy: [1] Use a set, [2] Sort and pair> '
+
     while True: 
         word = None 
         while not word: 
-            word = input('Insert word (type quit to exit)> ') 
+            word = input(WORD_IN_DESC) 
  
             if word == 'quit': 
                 print('bye') 
@@ -42,11 +46,12 @@ def main():
             strategy_picked = None 
             strategies = { '1': allUniqueSet, '2': allUniqueSort } 
             while strategy_picked not in strategies.keys(): 
-                strategy_picked = input('Choose strategy: [1] Use a set, [2] Sort and pair> ') 
+                strategy_picked = input(STRAT_IN_DESC)
  
                 try: 
                     strategy = strategies[strategy_picked] 
-                    print(f'allUnique({word}): {allUnique(word, strategy)}') 
+                    result = allUnique(word, strategy)
+                    print(f'allUnique({word}): {result}') 
                 except KeyError as err: 
                     print(f'Incorrect option: {strategy_picked}') 
 
