@@ -1,0 +1,94 @@
+# 
+
+<a href="https://www.packtpub.com/application-development/mastering-python-design-patterns-second-edition?utm_source=github&utm_medium=repository&utm_campaign="><img src="" alt="" height="256px" align="right"></a>
+
+This is the code repository for [](https://www.packtpub.com/application-development/mastering-python-design-patterns-second-edition?utm_source=github&utm_medium=repository&utm_campaign=), published by Packt.
+
+**A guide to creating smart, efficient, and reusable software**
+
+## What is this book about?
+0
+
+This book covers the following exciting features:
+
+
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1-788-83748-7) today!
+
+<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
+alt="https://www.packtpub.com/" border="5" /></a>
+
+## Instructions and Navigations
+All of the code is organized into folders. For example, Chapter02.
+
+The code will look like the following:
+```
+class Musician:
+def __init__(self, name):
+self.name = name
+def __str__(self):
+   return f'the musician {self.name}'
+def play(self):
+  return 'plays music'
+```
+
+**Following is what you need for this book:**
+This book is for intermediate Python developers. Prior knowledge of design patterns is not required to enjoy this book.
+
+With the following software and hardware list you can run all code files present in the book (Chapter 1-).
+### Software and Hardware List
+| Chapter | Software required | OS required |
+| -------- | ------------------------------------ | ----------------------------------- |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]().
+
+### Related products
+*  [[Packt]](https://www.packtpub.com/application-development/learn-python-programming-second-edition?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-788-99666-6)
+
+*  [[Packt]](https://www.packtpub.com/application-development/clean-code-python?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-788-83583-2)
+
+*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
+
+*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
+
+## Get to Know the Author
+**Kamon Ayeva**
+Kamon Ayeva is a web developer/DevOps engineer working with a variety of tools. He spends most of his time building projects using Python's powerful scripting capabilities, add-on libraries, and web frameworks such as Django or Flask. Kamon has been using Python in professional contexts for more than 12 years. He is also a Python instructor with a passion for teaching how to use Python features to quickly produce results.
+
+
+**Sakis Kasampalis**
+Sakis Kasampalis is a software engineer living in the Netherlands. He is not dogmatic about particular programming languages and tools; his principle is that the right tool should be used for the right job. One of his favorite tools is Python because he finds it very productive. Sakis was also the technical reviewer of Mastering Object-oriented Python and Learning Python Design Patterns, published by Packt Publishing.
+
+****
+0
+
+****
+0
+
+****
+0
+
+## Other books by the authors
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+### Suggestions and Feedback
+[Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
+
+
