@@ -48,13 +48,10 @@ With the following software and hardware list you can run all code files present
 
 
 ### Related products
-*  [[Packt]](https://www.packtpub.com/application-development/learn-python-programming-second-edition?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1788996666)
+*  Learn Python Programming - Second Edition [[Packt]](https://www.packtpub.com/application-development/learn-python-programming-second-edition?utm_source=github&utm_medium=repository&utm_campaign=1-788-99666-6) [[Amazon]](https://www.amazon.com/dp/1788996666)
 
-*  [[Packt]](https://www.packtpub.com/application-development/clean-code-python?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1788835832)
+* Clean Code in Python [[Packt]](https://www.packtpub.com/application-development/clean-code-python?utm_source=github&utm_medium=repository&utm_campaign=978-1-78883-583-1) [[Amazon]](https://www.amazon.com/dp/1788835832)
 
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/1788996666)
-
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/1788835832)
 
 ## Get to Know the Author
 **Kamon Ayeva**
