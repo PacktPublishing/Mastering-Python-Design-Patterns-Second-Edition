@@ -16,7 +16,7 @@ This book covers the following exciting features:
 * Choose an algorithm dynamically using the Strategy pattern
 
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1-788-83748-7) today!
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788837487) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
@@ -42,8 +42,7 @@ With the following software and hardware list you can run all code files present
 ### Software and Hardware List
 | Chapter | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
-|All
-chapters |Python 3.6.x  | Windows, Mac OS X, and Linux (Any) |
+|All chapters |Python 3.6.x  | Windows, Mac OS X, and Linux (Any) |
 |Chapter 15  |SQLite 3.22.0 or later  | Windows, Mac OS X, and Linux (Any) |
 |Chapter 15  |RabbitMQ 3.7.7  | Windows, Mac OS X, and Linux (Any) |
 
