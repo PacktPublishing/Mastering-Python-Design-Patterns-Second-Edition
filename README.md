@@ -2,7 +2,7 @@
 
 <a href="https://www.packtpub.com/application-development/mastering-python-design-patterns-second-edition?utm_source=github&utm_medium=repository&utm_campaign="><img src="" alt="" height="256px" align="right"></a>
 
-This is the code repository for [](https://www.packtpub.com/application-development/mastering-python-design-patterns-second-edition?utm_source=github&utm_medium=repository&utm_campaign=), published by Packt.
+This is the code repository for [Mastering Python Design Patterns, Second Edition](https://www.packtpub.com/application-development/mastering-python-design-patterns-second-edition?utm_source=github&utm_medium=repository&utm_campaign=), published by Packt.
 
 **A guide to creating smart, efficient, and reusable software**
 
