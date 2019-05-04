@@ -31,7 +31,7 @@ impl QuoteTerminalView {
         println!("And the quote is: {}", quote);
     }
 
-    fn error(&self, msg: &String) {
+    fn error(&self, msg: String) {
         println!("Error: {}", msg);
     }
 
@@ -64,10 +64,10 @@ impl QuoteTerminalController {
                             valid_input = true;
                             self.view.show(quote);
                         },
-                        None => self.view.show(&String::from("Not Found!")),
+                        None => self.view.error(String::from("Not Found!")),
                     }
                 },
-                Err(_) => self.view.error(&String::from("Incorrect index")),
+                Err(_) => self.view.error(String::from("Incorrect index")),
             }
         }
     }
