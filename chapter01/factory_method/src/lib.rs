@@ -1,15 +1,12 @@
 use std::fs;
 
 use serde_json::Value;
-use roxmltree::Document;
 
 pub struct JsonDataExtractor {
     parsed_data: Value,
 }
 
-pub struct XmlDataExtractor {
-    parsed_data: Document,
-}
+pub struct XmlDataExtractor {}
 
 impl JsonDataExtractor {
     pub fn new(data: &String) -> JsonDataExtractor {
@@ -27,17 +24,7 @@ impl JsonDataExtractor {
     }
 }
 
-impl XmlDataExtractor {
-    pub fn new(data: String) -> XmlDataExtractor {
-        XmlDataExtractor {
-            parsed_data: Document::parse(&data).unwrap(),
-        }
-    }
-
-    pub fn print_data(&self) {
-        println!("{:?}", self.parsed_data);
-    }
-}
+impl XmlDataExtractor {}
 
 fn data_extraction_factory_for_json(filepath: String) -> JsonDataExtractor {
     let data = get_string_from_file(filepath);
@@ -45,18 +32,8 @@ fn data_extraction_factory_for_json(filepath: String) -> JsonDataExtractor {
     JsonDataExtractor::new(&data)
 }
 
-fn data_extraction_factory_for_xml(filepath: String) -> XmlDataExtractor {
-    let data = get_string_from_file(filepath);
-
-    XmlDataExtractor::new(data)
-}
-
 pub fn extract_data_from_for_json(filepath: String) -> JsonDataExtractor {
     data_extraction_factory_for_json(filepath)
-}
-
-pub fn extract_data_from_for_xml(filepath: String) -> XmlDataExtractor {
-    data_extraction_factory_for_xml(filepath)
 }
 
 fn get_string_from_file(filepath: String) -> String {
