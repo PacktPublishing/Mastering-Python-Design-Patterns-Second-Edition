@@ -8,8 +8,8 @@ fn main() {
     for movie in json_data.as_array().unwrap() {
         println!("Title: {}", movie["title"]);
         if !movie["year"].is_null() { println!("Year: {}", movie["year"]) };
-        if !movie["director"].is_null() { println!("Year: {}", movie["director"]) };
-        if !movie["genre"].is_null() { println!("Year: {}", movie["genre"]) };
+        if !movie["director"].is_null() { println!("Director: {}", movie["director"]) };
+        if !movie["genre"].is_null() { println!("Genre: {}", movie["genre"]) };
         println!("");
     }
 }
