@@ -17,7 +17,7 @@ Refer to the original repository's [README.md](https://github.com/PacktPublishin
 
 * Chapter 1
   * abstract_factory.py
-  * factory_method.py
+  * factory_method.py -> Work in Progress
   * id.py
 * Chapter 2
   * apple_factory.py
@@ -41,7 +41,7 @@ Refer to the original repository's [README.md](https://github.com/PacktPublishin
 * Chapter 8
   * flyweight.py
   * lazy.py
-  * mvc.py
+  * mvc.py -> Done
   * proxy.py
 * Chapter 9
   * chain.py
