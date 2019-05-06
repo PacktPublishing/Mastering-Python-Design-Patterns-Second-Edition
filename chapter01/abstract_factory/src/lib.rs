@@ -1,3 +1,24 @@
+trait Hero {
+    fn new(name: String) -> Self;
+    fn interact_with<T: Obstacle>(&self, obstacle: &T);
+}
+
+trait Obstacle {
+    fn new() -> Self;
+    fn name(&self) -> &String;
+    fn action(&self) -> &String;
+}
+
+trait World {
+    fn new(name: String) -> Self;
+    fn make_character(&self) -> Frog;
+    fn make_obstacle(&self) -> Bug;
+}
+
+pub enum WorldSelection {
+    FrogWorld,
+}
+
 struct Frog {
     name: String,
 }
@@ -12,14 +33,14 @@ pub struct FrogWorld {
     player_name: String,
 }
 
-impl Frog {
+impl Hero for Frog {
     fn new(name: String) -> Frog {
         Frog {
             name: name,
         }
     }
 
-    fn interact_with(&self, obstacle: &Bug) {
+    fn interact_with<T: Obstacle>(&self, obstacle: &T) {
         let obs = obstacle.name();
         let act = obstacle.action();
 
@@ -30,7 +51,7 @@ impl Frog {
     }
 }
 
-impl Bug {
+impl Obstacle for Bug {
     fn new() -> Bug {
         Bug {
             name: String::from("a bug"),
@@ -47,8 +68,8 @@ impl Bug {
     }
 }
 
-impl FrogWorld {
-    pub fn new(name: String) -> FrogWorld {
+impl World for FrogWorld {
+    fn new(name: String) -> FrogWorld {
         let world_name = String::from("\n\n\t------ Frog World ------");
         println!("{}", world_name);
 
@@ -85,6 +106,14 @@ impl GameEnvironment {
 
     pub fn play(&self) {
         self.hero.interact_with(&self.obstacle);
+    }
+}
+
+
+// This function is created because structs having a trait can expose their methods to outside.
+pub fn generate_world(world_name: WorldSelection, player_name: String) -> FrogWorld {
+    match world_name {
+        WorldSelection::FrogWorld => FrogWorld::new(String::from(player_name)),
     }
 }
 
