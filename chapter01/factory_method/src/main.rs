@@ -1,3 +1,6 @@
+// Only JSON Extractor is implemented yet.
+//
+
 use factory_method::extract_data_from_for_json;
 
 fn main() {

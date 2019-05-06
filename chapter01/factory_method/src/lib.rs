@@ -1,3 +1,6 @@
+// Only JSON Extractor is implemented yet.
+//
+
 use std::fs;
 
 use serde_json::Value;
