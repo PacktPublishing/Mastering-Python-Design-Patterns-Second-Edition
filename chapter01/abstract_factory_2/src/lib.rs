@@ -10,7 +10,12 @@ trait Obstacle {
 }
 
 trait World {
+    type Hero;
+    type TestTest;
+
     fn new(name: String) -> Self;
+    fn make_character(&self) -> Hero;
+    fn make_obstacle(&self) -> TestTest;
 }
 
 pub enum WorldSelection {
@@ -75,6 +80,9 @@ impl Obstacle for Bug {
 }
 
 impl World for FrogWorld {
+    type Hero = Frog;
+    type TestTest = Bug;
+
     fn new(name: String) -> FrogWorld {
         let world_name = String::from("Frog World");
         println!("\n\n\t------ {} ------", world_name);
@@ -84,9 +92,7 @@ impl World for FrogWorld {
             player_name: name,
         }
     }
-}
-
-impl FrogWorld {
+    
     fn make_character(&self) -> Frog {
         let player_name = self.player_name.clone();
         Frog::new(player_name)
@@ -149,6 +155,9 @@ impl Obstacle for Ork {
 }
 
 impl World for WizardWorld {
+    type Hero = Wizard;
+    type TestTest = Ork;
+
     fn new(name: String) -> WizardWorld {
         let world_name = String::from("Wizard World");
         println!("\n\n\t------ {} ------", world_name);
@@ -158,9 +167,7 @@ impl World for WizardWorld {
             player_name: name,
         }
     }
-}
 
-impl WizardWorld {
     fn make_character(&self) -> Wizard {
         let player_name = self.player_name.clone();
         Wizard::new(player_name)
@@ -179,12 +186,15 @@ pub struct GameEnvironment<U, V> {
 }
 
 impl<U, V> GameEnvironment<U, V> {
-    // pub fn new(factory: FrogWorld) -> GameEnvironment<T, U> {
-    //     GameEnvironment {
-    //         hero: factory.make_character(),
-    //         obstacle: factory.make_obstacle(),
-    //     }
-    // }
+    pub fn new<W: World>(factory: W) -> GameEnvironment<U, V> {
+        let character = factory.make_character();
+        let obstacle = factory.make_obstacle();
+
+        GameEnvironment {
+            hero: character,
+            obstacle: obstacle,
+        }
+    }
 
     pub fn play(&self) {
         self.hero.interact_with(&self.obstacle);
