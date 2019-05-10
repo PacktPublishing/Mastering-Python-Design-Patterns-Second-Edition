@@ -1,0 +1,7 @@
+[package]
+name = "abstract_factory_3"
+version = "0.1.0"
+authors = ["Pick1a1username <20301273+Pick1a1username@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
