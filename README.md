@@ -20,7 +20,7 @@ Refer to the original repository's [README.md](https://github.com/PacktPublishin
   * factory_method.py -> Work in Progress
   * id.py
 * Chapter 2
-  * apple_factory.py
+  * apple_factory.py -> Done
   * builder.py
   * computer_builder.py
   * exercise_fluent_builder.py
