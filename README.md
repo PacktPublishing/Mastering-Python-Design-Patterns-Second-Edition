@@ -16,7 +16,7 @@ Refer to the original repository's [README.md](https://github.com/PacktPublishin
 ## Progress
 
 * Chapter 1
-  * abstract_factory.py
+  * abstract_factory.py -> Done
   * factory_method.py -> Work in Progress
   * id.py
 * Chapter 2

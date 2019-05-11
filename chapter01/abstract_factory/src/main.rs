@@ -1,4 +1,5 @@
 use std::io;
+use std::io::Write;
 
 
 // Traits
@@ -136,13 +137,19 @@ impl GameEnvironment {
 
 fn generate_world(name: String, age: u32) -> Box<dyn World> {
     if age < 18 {
+        let world_name = String::from("Frog World");
+        println!("\n\n\t------ {} ------", &world_name);
+        
         Box::new(FrogWorld { 
-            world_name: String::from("Frog World"),
+            world_name: world_name,
             player_name: name,
         })
     } else {
+        let world_name = String::from("Wizard World");
+        println!("\n\n\t------ {} ------", &world_name);
+        
         Box::new(WizardWorld { 
-            world_name: String::from("Wizard World"),
+            world_name: world_name,
             player_name: name,
         })
     }
@@ -152,15 +159,17 @@ fn main() {
     let mut name = String::new();
     let mut age = String::new();
 
-    println!("Hello. What's your name? ");
+    print!("Hello. What's your name? ");
+    // https://stackoverflow.com/questions/37531903/how-do-i-print-output-without-a-trailing-newline-in-rust
+    io::stdout().flush().unwrap();
     io::stdin().read_line(&mut name)
         .expect("Failed to read line");
+    let name = String::from(name.trim_end_matches("\n"));
 
-    println!("Welcome {}. How old are you? ", &name);
-
+    print!("Welcome {}. How old are you? ", &name);
+    io::stdout().flush().unwrap();
     io::stdin().read_line(&mut age)
         .expect("Failed to read line");
-
     let age: u32 = age.trim().parse()
         .expect("Please type a number!");
 
