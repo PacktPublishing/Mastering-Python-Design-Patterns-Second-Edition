@@ -39,3 +39,5 @@ print(s)
 
 s = single.getinstance()
 print(s)
+
+print("\nNotice that the 2 objects printed above are exactly the same!")
