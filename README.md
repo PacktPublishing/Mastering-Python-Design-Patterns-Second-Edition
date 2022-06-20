@@ -21,6 +21,10 @@ If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
 
+## Errata
+
+* Chapter 9, Implementation of Proxy Pattern section: The code block following the sentence "Let's recapitulate the full code of the proxy.py file:" is incorrect. The correction can be found at https://github.com/PacktPublishing/Mastering-Python-Design-Patterns-Second-Edition/blob/master/ERRATUM-PYTHON-DESIGN-PATTERN-PROXY.pdf.
+
 ## Instructions and Navigations
 All of the code is organized into folders. For example, Chapter02.
 
