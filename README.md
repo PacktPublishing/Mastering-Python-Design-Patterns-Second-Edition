@@ -31,12 +31,12 @@ All of the code is organized into folders. For example, Chapter02.
 The code will look like the following:
 ```
 class Musician:
-def __init__(self, name):
-self.name = name
-def __str__(self):
-   return f'the musician {self.name}'
-def play(self):
-  return 'plays music'
+    def __init__(self, name):
+        self.name = name
+    def __str__(self):
+        return f'the musician {self.name}'
+    def play(self):
+        return 'plays music'
 ```
 
 **Following is what you need for this book:**
